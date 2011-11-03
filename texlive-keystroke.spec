@@ -1,3 +1,9 @@
+# revision 17992
+# category Package
+# catalog-ctan /macros/latex/contrib/keystroke
+# catalog-date 2010-04-23 13:36:14 +0200
+# catalog-license gpl
+# catalog-version v1.6
 Name:		texlive-keystroke
 Version:	v1.6
 Release:	1
@@ -45,6 +51,7 @@ representation of the keys on a computer keyboard.
 %doc %{_texmfdistdir}/doc/latex/keystroke/README
 %doc %{_texmfdistdir}/doc/latex/keystroke/key-test.pdf
 %doc %{_texmfdistdir}/doc/latex/keystroke/key-test.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ representation of the keys on a computer keyboard.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
