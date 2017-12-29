@@ -1,12 +1,6 @@
-# revision 17992
-# category Package
-# catalog-ctan /macros/latex/contrib/keystroke
-# catalog-date 2010-04-23 13:36:14 +0200
-# catalog-license gpl
-# catalog-version v1.6
 Name:		texlive-keystroke
-Version:	v1.6
-Release:	10
+Version:	1.6
+Release:	1
 Summary:	Graphical representation of keys on keyboard
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/keystroke
@@ -52,17 +46,3 @@ representation of the keys on a computer keyboard.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> v1.6-2
-+ Revision: 752984
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> v1.6-1
-+ Revision: 718773
-- texlive-keystroke
-- texlive-keystroke
-- texlive-keystroke
-- texlive-keystroke
-
