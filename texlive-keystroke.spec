@@ -1,6 +1,6 @@
 Name:		texlive-keystroke
 Version:	1.6
-Release:	1
+Release:	2
 Summary:	Graphical representation of keys on keyboard
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/keystroke
