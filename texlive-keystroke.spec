@@ -1,12 +1,12 @@
 Name:		texlive-keystroke
-Version:	1.6
-Release:	2
+Version:	17992
+Release:	1
 Summary:	Graphical representation of keys on keyboard
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/keystroke
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/keystroke.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/keystroke.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/keystroke.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/keystroke.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ A LaTeX package which provides macros for the graphical
 representation of the keys on a computer keyboard.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,7 +39,7 @@ representation of the keys on a computer keyboard.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
