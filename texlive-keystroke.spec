@@ -3,7 +3,7 @@ Version:	17992
 Release:	2
 Summary:	Graphical representation of keys on keyboard
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/keystroke
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/keystroke
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/keystroke.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/keystroke.doc.r%{version}.tar.xz
